@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScanMate AI – Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1b1b1f; --bg:#ffffff; --muted:#5f6368; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#e6e1e5; --bg:#141218; --muted:#a8a8b0; } }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px;
+         margin: 0 auto; padding: 24px 16px 64px; line-height: 1.6; color: var(--fg); background: var(--bg); }
+  h1 { font-size: 1.8rem; margin-bottom: 0; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<h1>ScanMate AI – Privacy Policy</h1>
+<p class="muted">Last updated: 13 October 2026 (version 1.15)</p>
+
+<p>ScanMate AI ("the app", Android package <code>com.scanmateai.app</code>, published on Google Play) is a document
+scanner with optional AI tools that explain documents.
+This policy explains what data the app handles and where it goes. In short: <strong>your scans stay on your
+phone</strong>. We do not run servers and you need no account. The free version shows ads from Google AdMob
+(section 6); a one-time purchase removes them.</p>
+
+<h2>1. Scans, PDFs and extracted text</h2>
+<p>Photos you scan or pick from your gallery, the PDFs made from them, and text read from them (OCR) are
+stored only in the app's private storage on your device. Text recognition runs on your device, using Google
+ML Kit and, for languages you add (for example Bangla, Arabic or Hindi), the open-source Tesseract OCR engine.
+Nothing is uploaded unless you choose to share a file or use an AI tool (below). Deleting a document or
+uninstalling the app removes these files.</p>
+<p>When you add a text recognition language, its language file (about 3–15 MB) is downloaded once from GitHub
+(raw.githubusercontent.com, the official tesseract-ocr project). GitHub receives the download request as with any
+download from their site. No document content is sent.</p>
+
+<h2>2. Camera and photos</h2>
+<p>The ScanMate camera uses your phone's camera only while the scan screen is open, to find the document edges
+and take the pages. The edges are found by a small AI model and image processing that run entirely on your device;
+camera images and photos are not sent anywhere. If you turn on
+"Use Google's scanner", Google Play services' document scanner is used instead (it also runs on your device). The
+"Phone camera" option uses your phone's camera app. Photos are chosen with the Android photo picker and PDFs with
+the Android file picker, so the app only sees the files you select. "Save to phone" writes only to the location you
+pick.</p>
+
+<h2>3. AI tools</h2>
+<ul>
+  <li><strong>Off (default):</strong> no AI is used and no document content leaves your phone.</li>
+  <li><strong>On (your own API key):</strong> only when you use an AI tool (Explain, Summarize, Translate, Ask, Exact text,
+  To Excel, To Word, Homework help, AI crop, Suggest a name), the text and/or page images of that document are sent directly from your phone to the AI
+  provider <em>you</em> chose (for example Google Gemini, OpenAI, OpenRouter or Groq), using <em>your own</em> API key.
+  We never receive this content. That provider's own privacy policy applies to how it handles it.</li>
+</ul>
+
+<h2>4. API keys, signature, PIN and backups</h2>
+<p>Your AI provider API key is stored encrypted on your device (Android Keystore) and is only sent to the provider it
+belongs to. A signature you draw is saved only on your device. If you turn on App lock, only a salted hash of your PIN
+is stored, encrypted, on your device. QR codes and barcodes are read on your device (from the camera or a picture you
+pick); the list of recent codes is kept only on your device. "Add to Contacts" hands the details to your phone's contacts
+app, where you save them; the app cannot read your contacts. "Hide private numbers" finds numbers with on-device text
+recognition. "Back up all documents" creates a file that you choose where to save; we never receive any of these.</p>
+<p>When you share photos or PDFs to ScanMate AI from another app, the app receives only the files you shared and keeps
+them on your device. Read aloud uses your phone's text-to-speech engine. Printing uses Android's print service and the
+printer you choose.</p>
+
+<h2>4b. Sync to Google Drive or a folder (optional, off by default)</h2>
+<p>If you turn on <b>Backup &amp; sync</b>, the app copies the PDF of each document to the place you choose: a folder
+you pick on your phone, memory card or in a cloud app, or, where the option is offered, your own Google Drive (the app
+then asks Google for the <i>drive.file</i> permission, which only lets it see and change the files and folders it creates
+itself). Copies go only there,
+directly from your phone; we never receive them. You can stop syncing at any time in Settings.</p>
+<p>The app keeps a small log of unexpected errors on your device (no documents, no text from them). It is shared only
+if you choose "Report a problem" and pick where to send it.</p>
+
+<h2>5. Reporting an AI answer</h2>
+<p>If you tap "Report this answer", the app opens your email app with the answer and the reason pre-filled. Nothing is
+sent unless you send that email. We use reports only to improve the app.</p>
+
+<h2>6. Ads (Google AdMob) and the "Remove ads" purchase</h2>
+<p>We do not collect any data ourselves: no analytics, no crash reporting, and no servers that receive your data.
+The free version shows ads (a small banner on the Home and Tools screens and, now and then, a full-screen ad after an
+export) using the Google Mobile Ads SDK (AdMob). To show and measure ads, Google may collect and process your device's
+advertising ID, IP address, approximate location derived from it, app and device information, and how you interact
+with ads. Ads never receive your documents, scans, text or files. How Google uses this data is explained at
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use
+its services</a>.</p>
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland, the app asks for your consent with
+Google's consent form before ads are personalized; you can change your choice any time in Settings › Ad privacy choices.
+You can also reset or delete your advertising ID in your phone's settings (Settings › Privacy › Ads).</p>
+<p>"Remove ads" is a one-time purchase made through Google Play. Google handles the payment; we only receive a
+confirmation that the purchase exists, which the app keeps on your device. After the purchase no ads are loaded.</p>
+
+<h2>7. Deleting your data</h2>
+<p>Everything the app keeps is on your phone: delete a document in the app, or clear the app's storage or uninstall it to
+remove all of it. We hold no copy and no account, so there is nothing on our side to delete. Advertising data is
+handled by Google; you can reset or delete your advertising ID in your phone's settings.</p>
+
+<h2>8. Children</h2>
+<p>The app is not directed at children under 13 and does not knowingly show ads to them.</p>
+
+<h2>9. Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy or the app: <a href="mailto:support@scanmate.me">support@scanmate.me</a></p>
+</body>
+</html>
